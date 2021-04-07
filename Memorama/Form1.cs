@@ -30,15 +30,21 @@ namespace Memorama
             abiertas++;
             if (abiertas == 2)
             {
-                if(Dereck2.Visible == true)
+                para.Enabled = true;
+                para.Start();
+                if (Dereck2.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString();
                 }
 
-                      if (Dereck1.Visible == false || Dereck2.Visible == false)
+                
+
+                    if (Dereck1.Visible == false || Dereck2.Visible == false)
                         {
+                        MessageBox.Show("Las cartas no coinciden", "Error");
                         Dereck1.Visible = false;
                         Dereck2.Visible = false;
                         cover_Dereck1.Visible = true;
@@ -102,13 +108,14 @@ namespace Memorama
             {
                 if (Dereck1.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString(); ;
                 }
-
                 if (Dereck1.Visible == false || Dereck2.Visible == false)
                 {
+                    MessageBox.Show("Las cartas no coinciden", "Error");
                     Dereck1.Visible = false;
                     Dereck2.Visible = false;
                     cover_Dereck1.Visible = true;
@@ -172,9 +179,20 @@ namespace Memorama
             {
                 if (penelope2.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString();
+                }
+
+                if (penelope1.Visible == false || penelope2.Visible == false)
+                {
+                    MessageBox.Show("Las cartas no coinciden", "Error");
+                    penelope1.Visible = false;
+                    penelope2.Visible = false;
+                    cover_penelope1.Visible = true;
+                    cover_penelope2.Visible = true;
+                    abiertas = 0;
                 }
 
                 if (Dereck1.Visible == false || Dereck2.Visible == false)
@@ -183,15 +201,6 @@ namespace Memorama
                     Dereck2.Visible = false;
                     cover_Dereck1.Visible = true;
                     cover_Dereck2.Visible = true;
-                    abiertas = 0;
-                }
-
-                if (penelope1.Visible == false || penelope2.Visible == false)
-                {
-                    penelope1.Visible = false;
-                    penelope2.Visible = false;
-                    cover_penelope1.Visible = true;
-                    cover_penelope2.Visible = true;
                     abiertas = 0;
                 }
 
@@ -242,26 +251,27 @@ namespace Memorama
             {
                 if (penelope1.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString();
                 }
 
+                if (penelope1.Visible == false || penelope2.Visible == false)
+                {
+                    MessageBox.Show("Las cartas no coinciden", "Error");
+                    penelope1.Visible = false;
+                    penelope2.Visible = false;
+                    cover_penelope1.Visible = true;
+                    cover_penelope2.Visible = true;
+                    abiertas = 0;
+                }
                 if (Dereck1.Visible == false || Dereck2.Visible == false)
                 {
                     Dereck1.Visible = false;
                     Dereck2.Visible = false;
                     cover_Dereck1.Visible = true;
                     cover_Dereck2.Visible = true;
-                    abiertas = 0;
-                }
-
-                if (penelope1.Visible == false || penelope2.Visible == false)
-                {
-                    penelope1.Visible = false;
-                    penelope2.Visible = false;
-                    cover_penelope1.Visible = true;
-                    cover_penelope2.Visible = true;
                     abiertas = 0;
                 }
 
@@ -313,9 +323,20 @@ namespace Memorama
             {
                 if (callisto2.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString();
+                }
+
+                if (callisto1.Visible == false || callisto2.Visible == false)
+                {
+                    MessageBox.Show("Las cartas no coinciden", "Error");
+                    callisto1.Visible = false;
+                    callisto2.Visible = false;
+                    cover_callisto1.Visible = true;
+                    cover_callisto2.Visible = true;
+                    abiertas = 0;
                 }
 
                 if (Dereck1.Visible == false || Dereck2.Visible == false)
@@ -362,16 +383,6 @@ namespace Memorama
                     cover_ray2.Visible = true;
                     abiertas = 0;
                 }
-
-                if (callisto1.Visible == false || callisto2.Visible == false)
-                {
-                    callisto1.Visible = false;
-                    callisto2.Visible = false;
-                    cover_callisto1.Visible = true;
-                    cover_callisto2.Visible = true;
-                    abiertas = 0;
-                }
-
             }
         }
         private void cover_callisto2_Click_1(object sender, EventArgs e)
@@ -383,9 +394,20 @@ namespace Memorama
             {
                 if (callisto1.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString();
+                }
+
+                if (callisto1.Visible == false || callisto2.Visible == false)
+                {
+                    MessageBox.Show("Las cartas no coinciden", "Error");
+                    callisto1.Visible = false;
+                    callisto2.Visible = false;
+                    cover_callisto1.Visible = true;
+                    cover_callisto2.Visible = true;
+                    abiertas = 0;
                 }
 
                 if (Dereck1.Visible == false || Dereck2.Visible == false)
@@ -430,15 +452,6 @@ namespace Memorama
                     ray2.Visible = false;
                     cover_ray1.Visible = true;
                     cover_ray2.Visible = true;
-                    abiertas = 0;
-                }
-
-                if (callisto1.Visible == false || callisto2.Visible == false)
-                {
-                    callisto1.Visible = false;
-                    callisto2.Visible = false;
-                    cover_callisto1.Visible = true;
-                    cover_callisto2.Visible = true;
                     abiertas = 0;
                 }
 
@@ -454,9 +467,20 @@ namespace Memorama
             {
                 if (ray2.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString();
+                }
+
+                if (ray1.Visible == false || ray2.Visible == false)
+                {
+                    MessageBox.Show("Las cartas no coinciden", "Error");
+                    ray1.Visible = false;
+                    ray2.Visible = false;
+                    cover_ray1.Visible = true;
+                    cover_ray2.Visible = true;
+                    abiertas = 0;
                 }
 
                 if (Dereck1.Visible == false || Dereck2.Visible == false)
@@ -495,16 +519,7 @@ namespace Memorama
                     abiertas = 0;
                 }
 
-                if (ray1.Visible == false || ray2.Visible == false)
-                {
-                    ray1.Visible = false;
-                    ray2.Visible = false;
-                    cover_ray1.Visible = true;
-                    cover_ray2.Visible = true;
-                    abiertas = 0;
-                }
-
-                if (callisto1.Visible == false || callisto2.Visible == false)
+               if (callisto1.Visible == false || callisto2.Visible == false)
                 {
                     callisto1.Visible = false;
                     callisto2.Visible = false;
@@ -524,9 +539,20 @@ namespace Memorama
             {
                 if (ray1.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString();
+                }
+
+                if (ray1.Visible == false || ray2.Visible == false)
+                {
+                    MessageBox.Show("Las cartas no coinciden", "Error");
+                    ray1.Visible = false;
+                    ray2.Visible = false;
+                    cover_ray1.Visible = true;
+                    cover_ray2.Visible = true;
+                    abiertas = 0;
                 }
 
                 if (Dereck1.Visible == false || Dereck2.Visible == false)
@@ -562,15 +588,6 @@ namespace Memorama
                     conejo2.Visible = false;
                     cover_conejo1.Visible = true;
                     cover_conejo2.Visible = true;
-                    abiertas = 0;
-                }
-
-                if (ray1.Visible == false || ray2.Visible == false)
-                {
-                    ray1.Visible = false;
-                    ray2.Visible = false;
-                    cover_ray1.Visible = true;
-                    cover_ray2.Visible = true;
                     abiertas = 0;
                 }
 
@@ -595,9 +612,20 @@ namespace Memorama
             {
                 if (conejo2.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString();
+                }
+
+                if (conejo1.Visible == false || conejo2.Visible == false)
+                {
+                    MessageBox.Show("Las cartas no coinciden", "Error");
+                    conejo1.Visible = false;
+                    conejo2.Visible = false;
+                    cover_conejo1.Visible = true;
+                    cover_conejo2.Visible = true;
+                    abiertas = 0;
                 }
 
                 if (Dereck1.Visible == false || Dereck2.Visible == false)
@@ -627,16 +655,7 @@ namespace Memorama
                     abiertas = 0;
                 }
 
-                if (conejo1.Visible == false || conejo2.Visible == false)
-                {
-                    conejo1.Visible = false;
-                    conejo2.Visible = false;
-                    cover_conejo1.Visible = true;
-                    cover_conejo2.Visible = true;
-                    abiertas = 0;
-                }
-
-                if (ray1.Visible == false || ray2.Visible == false)
+               if (ray1.Visible == false || ray2.Visible == false)
                 {
                     ray1.Visible = false;
                     ray2.Visible = false;
@@ -665,11 +684,21 @@ namespace Memorama
             {
                 if (conejo1.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString();
                 }
 
+                if (conejo1.Visible == false || conejo2.Visible == false)
+                {
+                    MessageBox.Show("Las cartas no coinciden", "Error");
+                    conejo1.Visible = false;
+                    conejo2.Visible = false;
+                    cover_conejo1.Visible = true;
+                    cover_conejo2.Visible = true;
+                    abiertas = 0;
+                }
                 if (Dereck1.Visible == false || Dereck2.Visible == false)
                 {
                     Dereck1.Visible = false;
@@ -694,15 +723,6 @@ namespace Memorama
                     eclipse2.Visible = false;
                     cover_eclipse1.Visible = true;
                     cover_eclipse2.Visible = true;
-                    abiertas = 0;
-                }
-
-                if (conejo1.Visible == false || conejo2.Visible == false)
-                {
-                    conejo1.Visible = false;
-                    conejo2.Visible = false;
-                    cover_conejo1.Visible = true;
-                    cover_conejo2.Visible = true;
                     abiertas = 0;
                 }
 
@@ -736,9 +756,20 @@ namespace Memorama
             {
                 if (eclipse2.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString();
+                }
+
+                if (eclipse1.Visible == false || eclipse2.Visible == false)
+                {
+                    MessageBox.Show("Las cartas no coinciden", "Error");
+                    eclipse1.Visible = false;
+                    eclipse2.Visible = false;
+                    cover_eclipse1.Visible = true;
+                    cover_eclipse2.Visible = true;
+                    abiertas = 0;
                 }
 
                 if (Dereck1.Visible == false || Dereck2.Visible == false)
@@ -756,15 +787,6 @@ namespace Memorama
                     penelope2.Visible = false;
                     cover_penelope1.Visible = true;
                     cover_penelope2.Visible = true;
-                    abiertas = 0;
-                }
-
-                if (eclipse1.Visible == false || eclipse2.Visible == false)
-                {
-                    eclipse1.Visible = false;
-                    eclipse2.Visible = false;
-                    cover_eclipse1.Visible = true;
-                    cover_eclipse2.Visible = true;
                     abiertas = 0;
                 }
 
@@ -806,9 +828,20 @@ namespace Memorama
             {
                 if (eclipse1.Visible == true)
                 {
+                    MessageBox.Show("Ganas 10 puntos", "Error");
                     abiertas = 0;
                     puntos = puntos + 10;
                     L_puntos.Text = puntos.ToString();
+                }
+
+                if (eclipse1.Visible == false || eclipse2.Visible == false)
+                {
+                    MessageBox.Show("Las cartas no coinciden", "Error");
+                    eclipse1.Visible = false;
+                    eclipse2.Visible = false;
+                    cover_eclipse1.Visible = true;
+                    cover_eclipse2.Visible = true;
+                    abiertas = 0;
                 }
 
                 if (Dereck1.Visible == false || Dereck2.Visible == false)
@@ -826,15 +859,6 @@ namespace Memorama
                     penelope2.Visible = false;
                     cover_penelope1.Visible = true;
                     cover_penelope2.Visible = true;
-                    abiertas = 0;
-                }
-
-                if (eclipse1.Visible == false || eclipse2.Visible == false)
-                {
-                    eclipse1.Visible = false;
-                    eclipse2.Visible = false;
-                    cover_eclipse1.Visible = true;
-                    cover_eclipse2.Visible = true;
                     abiertas = 0;
                 }
 

@@ -29,6 +29,7 @@ namespace Memorama
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.conejo2 = new System.Windows.Forms.PictureBox();
@@ -56,6 +57,7 @@ namespace Memorama
             this.cover_ray1 = new System.Windows.Forms.PictureBox();
             this.cover_ray2 = new System.Windows.Forms.PictureBox();
             this.L_puntos = new System.Windows.Forms.Label();
+            this.para = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.conejo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ray2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.callisto1)).BeginInit();
@@ -382,6 +384,10 @@ namespace Memorama
             this.L_puntos.TabIndex = 13;
             this.L_puntos.Click += new System.EventHandler(this.label1_Click);
             // 
+            // para
+            // 
+            this.para.Interval = 1000;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,6 +478,7 @@ namespace Memorama
         private System.Windows.Forms.PictureBox cover_ray1;
         private System.Windows.Forms.PictureBox cover_ray2;
         private System.Windows.Forms.Label L_puntos;
+        private System.Windows.Forms.Timer para;
     }
 }
 
